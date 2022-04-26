@@ -66,7 +66,7 @@ class student3(models.Model):
     studentemail = models.CharField(max_length=255)    
    
 class student4(models.Model):
-    studentid = models.CharField(max_length=20, primary_key= True)#remove this pk if it doesnt work
+    studentid = models.CharField(max_length=20, primary_key=True)#remove this pk if it doesnt work
     adminid = models.ForeignKey(admin2,on_delete=models.CASCADE)
 
     class Meta:    
@@ -96,10 +96,10 @@ class exammarklist3(models.Model):
          
 class examinationtype(models.Model):
     examid = models.CharField(max_length=20)
-    studentdate = models.CharField(max_length=50)
+    examtype = models.CharField(max_length=50)
 
     class Meta:    
-        unique_together = (('examid', 'studentdate'),)
+        unique_together = (('examid', 'examtype'),)
 
 class attempts(models.Model):
     studentid = models.ForeignKey(student3,on_delete=models.CASCADE)
