@@ -19,6 +19,12 @@ def adminLogin(request):
 def index(request):
     return render(request, 'index.html')
     #return HttpResponse("this is homepage")
+    
+def documentation(request):
+    return render(request, 'documentation.html')
+
+def faqs(request):
+    return render(request, 'faqs.html')
 
 def about(request):
     return render(request, 'about.html')

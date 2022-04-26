@@ -45,24 +45,9 @@
   <div class="top-header py-2 bg-white">
     <div class="container">
       <div class="row no-gutters">
-        <div class="col-lg-4 text-center text-lg-left">
-          <a class="text-color mr-3" href="callto:+443003030266"><strong>CALL</strong> +44 300 303 0266</a>
-          <ul class="list-inline d-inline">
-            <li class="list-inline-item mx-0"><a class="d-inline-block p-2 text-color" href="#"><i class="ti-facebook"></i></a></li>
-            <li class="list-inline-item mx-0"><a class="d-inline-block p-2 text-color" href="#"><i class="ti-twitter-alt"></i></a></li>
-            <li class="list-inline-item mx-0"><a class="d-inline-block p-2 text-color" href="#"><i class="ti-linkedin"></i></a></li>
-            <li class="list-inline-item mx-0"><a class="d-inline-block p-2 text-color" href="#"><i class="ti-instagram"></i></a></li>
-          </ul>
-        </div>
+       
         <div class="col-lg-8 text-center text-lg-right">
-          <ul class="list-inline">
-            <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="notice.html">notice</a></li>
-            <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="research.html">research</a></li>
-            <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="scholarship.html">SCHOLARSHIP</a></li>
-            <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="#" data-toggle="modal" data-target="#loginModal">login</a></li>
-            <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="#" data-toggle="modal" data-target="#signupModal">register</a></li>
-            <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="#" data-toggle="modal" data-target="#signupModal">Logout</a></li>
-          </ul>
+         
         </div>
       </div>
     </div>
@@ -91,26 +76,7 @@
             <li class="nav-item @@contact">
               <a class="nav-link" href= {% url 'entryPage' %}>Logout</a>
             </li>
-            <!--<li class="nav-item @@blog">
-              <a class="nav-link" href="blog.html">BLOG</a>
-            </li>
-            <li class="nav-item dropdown view">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
-                Pages
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="teacher.html">Teacher</a>
-                <a class="dropdown-item" href="teacher-single.html">Teacher Single</a>
-                <a class="dropdown-item" href="notice.html">Notice</a>
-                <a class="dropdown-item" href="notice-single.html">Notice Details</a>
-                <a class="dropdown-item" href="research.html">Research</a>
-                <a class="dropdown-item" href="scholarship.html">Scholarship</a>
-                <a class="dropdown-item" href="course-single.html">Course Details</a>
-                <a class="dropdown-item" href="event-single.html">Event Details</a>
-                <a class="dropdown-item" href="blog-single.html">Blog Details</a>
-              </div>
-            </li>-->
+
             
           </ul>
         </div>
@@ -118,71 +84,6 @@
     </div>
   </div>
 </header>
-<!-- /header -->
-<!-- Modal -->
-<!--<div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content rounded-0 border-0 p-4">
-            <div class="modal-header border-0">
-                <h3>Register</h3>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <div class="login">
-                    <form action="#" class="row">
-                        <div class="col-12">
-                            <input type="text" class="form-control mb-3" id="signupPhone" name="signupPhone" placeholder="Phone">
-                        </div>
-                        <div class="col-12">
-                            <input type="text" class="form-control mb-3" id="signupName" name="signupName" placeholder="Name">
-                        </div>
-                        <div class="col-12">
-                            <input type="email" class="form-control mb-3" id="signupEmail" name="signupEmail" placeholder="Email">
-                        </div>
-                        <div class="col-12">
-                            <input type="password" class="form-control mb-3" id="signupPassword" name="signupPassword" placeholder="Password">
-                        </div>
-                        <div class="col-12">
-                            <button type="submit" class="btn btn-primary">SIGN UP</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-Modal -->
-<!--<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content rounded-0 border-0 p-4">
-            <div class="modal-header border-0">
-                <h3>Login</h3>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <form action="#" class="row">
-                    <div class="col-12">
-                        <input type="text" class="form-control mb-3" id="loginPhone" name="loginPhone" placeholder="Phone">
-                    </div>
-                    <div class="col-12">
-                        <input type="text" class="form-control mb-3" id="loginName" name="loginName" placeholder="Name">
-                    </div>
-                    <div class="col-12">
-                        <input type="password" class="form-control mb-3" id="loginPassword" name="loginPassword" placeholder="Password">
-                    </div>
-                    <div class="col-12">
-                        <button type="submit" class="btn btn-primary">LOGIN</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>-->
-
 <!-- page title -->
 <section class="page-title-section overlay" data-background="/static/images/backgrounds/page-title.jpg">
   <div class="container">
@@ -205,9 +106,20 @@ Modal -->
     <div class="row">
       <div class="col-12">
         <img class="img-fluid w-100 mb-4" src="/static/computer-test.jpg" alt="about image">
-        <h2 class="section-title">ABOUT OUR PLATFORM</h2>
-        <p>We've created affordable Online Testing Plans to suit every organization. From occasional Testing to Enterprise Quiz Maker requirements, Examomatic is your Secure & reliable exam maker & online testing solution. You can also Test 1,000s of Users simultaneously with Examomatic.</p>
-        <p>Our custom web-based Testing tool allows you to easily create secure online Exams & assessments with advanced Quiz settings such as time limits, public & private Test access, randomize Questions, instant feedback, multiple choice, matching, short answer, video, audio, essay & more Question types, embed exams in Wordpress & Google Sites.</p>
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p style = "font-size: 5px;"><strong>Question :  What are the minimum system requirements I need for online exams?<strong></p>
+        <p>Answer : You will need a working webcam (preferably external) and microphone, and a stable internet
+            connection. You should take your written examination on either a desktop computer or laptop</p>
+        <p><strong>Question :  I’m an overseas candidate. Will I have to take my examination at an unusual time?</strong></p>
+        <p><strong>Answer :  Examinations will be held at the same time across the world in line with GMT so if you are
+            based overseas then your examination will take place at the equivalent time.</strong></p>
+        <p><strong>Question : How will you stop candidates from cheating?</strong></p>
+        <p></strong>Answer : The TestReach system will lock down the device that you are using so that the only thing you
+            can access is your examination.</strong></p>
+        <p></strong>Question : What happens if I am late for the examination?</strong></p>
+        <p></strong>Answer : For written examinations, if you are more than 30 minutes late you will not be able to sit.</strong></p>
+        <p><strong>Question : What internet speed do I need?</strong></p>
+        <p><strong>Answer : TestReact have advised that a minimum of 516kbps connection speed is recommended.</strong></p>
       </div>
     </div>
   </div>
@@ -239,13 +151,7 @@ Modal -->
           <h5 class="text-white">STUDENTS</h5>
         </div>
       </div>
-      <!-- funfacts item 
-      <div class="col-md-3 col-sm-6 mb-4 mb-md-0">
-        <div class="text-center">
-          <h2 class="count text-white" data-count="6969">0</h2>
-          <h5 class="text-white">SATISFIED CLIENT</h5>
-        </div>
-      </div>-->
+      
     </div>
   </div>
 </section>
@@ -346,23 +252,6 @@ Modal -->
 
 <!-- footer -->
 <footer>
-  <!-- newsletter 
-  <div class="newsletter">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-9 ml-auto bg-primary py-5 newsletter-block">
-          <h3 class="text-white">Subscribe Now</h3>
-          <form action="#">
-            <div class="input-wrapper">
-              <input type="email" class="form-control border-0" id="newsletter" name="newsletter" placeholder="Enter Your Email...">
-              <button type="submit" value="send" class="btn btn-primary">Join</button>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
-  footer content -->
   <div class="footer bg-footer section border-bottom">
     <div class="container">
       <div class="row">
@@ -396,52 +285,7 @@ Modal -->
             <li class="mb-3"><a class="text-color" href="faqs.html">FAQs</a></li>
           </ul>
         </div>
-        <!-- support
-        <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
-          <h4 class="text-white mb-5">SUPPORT</h4>
-          <ul class="list-unstyled">
-            <li class="mb-3"><a class="text-color" href="#">Forums</a></li>
-            <li class="mb-3"><a class="text-color" href="#">Documentation</a></li>
-            <li class="mb-3"><a class="text-color" href="#">Language</a></li>
-            <li class="mb-3"><a class="text-color" href="#">Release Status</a></li>
-          </ul>
-        </div>
-        <!-- support 
-        <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
-          <h4 class="text-white mb-5">RECOMMEND</h4>
-          <ul class="list-unstyled">
-            <li class="mb-3"><a class="text-color" href="#">WordPress</a></li>
-            <li class="mb-3"><a class="text-color" href="#">LearnPress</a></li>
-            <li class="mb-3"><a class="text-color" href="#">WooCommerce</a></li>
-            <li class="mb-3"><a class="text-color" href="#">bbPress</a></li>
-          </ul>
-        </div>-->
-      </div>
-    </div>
-  </div>
-  <!-- copyright 
-  <div class="copyright py-4 bg-footer">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-7 text-sm-left text-center">
-          <p class="mb-0">Copyright
-            <script>
-              var CurrentYear = new Date().getFullYear()
-              document.write(CurrentYear)
-            </script> 
-            © themefisher</p>
-        </div>
-        <!--<div class="col-sm-5 text-sm-right text-center">
-          <ul class="list-inline">
-            <li class="list-inline-item"><a class="d-inline-block p-2" href="#"><i class="ti-facebook text-primary"></i></a></li>
-            <li class="list-inline-item"><a class="d-inline-block p-2" href="#"><i class="ti-twitter-alt text-primary"></i></a></li>
-            <li class="list-inline-item"><a class="d-inline-block p-2" href="#"><i class="ti-linkedin text-primary"></i></a></li>
-            <li class="list-inline-item"><a class="d-inline-block p-2" href="#"><i class="ti-instagram text-primary"></i></a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>-->
+ 
 </footer>
 <!-- /footer -->
 
