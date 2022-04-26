@@ -31,6 +31,8 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'Hello',
+    'home',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -54,7 +56,7 @@ ROOT_URLCONF = 'Hello.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR / "static", BASE_DIR / "template"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -115,7 +117,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
@@ -125,6 +127,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # added manually
 STATICFILES_DIRS = [
-    BASE_DIR / "static",
-    '/var/www/static/',
+    BASE_DIR / "static"
 ]
