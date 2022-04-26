@@ -45,7 +45,7 @@
   <div class="navigation w-100">
     <div class="container">
       <nav class="navbar navbar-expand-lg navbar-dark p-0">
-        <a class="navbar-brand" href="index.html"><img src="/static/images/logo.png" alt="logo"></a>
+        <a class="navbar-brand" href="#"><img src="/static/ExamomaticLogo.png" alt="logo"></a>
         <button class="navbar-toggler rounded-0" type="button" data-toggle="collapse" data-target="#navigation"
           aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -54,13 +54,13 @@
         <div class="collapse navbar-collapse" id="navigation">
           <ul class="navbar-nav ml-auto text-center">
             <li class="nav-item @@home">
-              <a class="nav-link" href={% url 'studentDashboard' %}>Home</a>
+              <a class="nav-link" href={% url 'adminDashboard' %}>Home</a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href={% url 'about' %}>About Us</a>
+              <a class="nav-link" href={% url 'adminAbout' %}>About Us</a>
             </li>
             <li class="nav-item @@contact">
-              <a class="nav-link" href= {% url 'contact' %} >Contact Us</a>
+              <a class="nav-link" href= {% url 'adminContact' %} >Contact Us</a>
             </li>
             <li class="nav-item @@contact">
               <a class="nav-link" href= {% url 'entryPage' %}>Logout</a>
@@ -172,7 +172,7 @@ processing speed is very high and the work is reduced in the maintenancepoint of
       <div class="row">
         <div class="col-lg-4 col-sm-8 mb-5 mb-lg-0">
           <!-- logo -->
-          <a class="logo-footer" href="index.html"><img class="img-fluid mb-4" src="/static/images/logo.png" alt="logo"></a>
+          <a class="logo-footer" href="#"><img class="img-fluid mb-4" src="/static/ExamomaticLogo.png" alt="logo"></a>
           <ul class="list-unstyled">
             <li class="mb-2">19 Mile Road, Shamirpet, Hyderabad, Telangana, India</li>
             <li class="mb-2">+91 90345 67899</li>
@@ -184,9 +184,9 @@ processing speed is very high and the work is reduced in the maintenancepoint of
         <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
           <h4 class="text-white mb-5">COMPANY</h4>
           <ul class="list-unstyled">
-            <li class="mb-3"><a class="text-color" href={% url 'about' %}>About Us</a></li>
+            <li class="mb-3"><a class="text-color" href={% url 'adminAbout' %}>About Us</a></li>
             <!--<li class="mb-3"><a class="text-color" href="teacher.html">Our Teacher</a></li>-->
-            <li class="mb-3"><a class="text-color" href={% url 'contact' %}>Contact Us</a></li>
+            <li class="mb-3"><a class="text-color" href={% url 'adminContact' %}>Contact Us</a></li>
             <!--<li class="mb-3"><a class="text-color" href="blog.html">Blog</a></li>-->
           </ul>
         </div>
@@ -195,9 +195,9 @@ processing speed is very high and the work is reduced in the maintenancepoint of
           <h4 class="text-white mb-5">LINKS</h4>
           <ul class="list-unstyled">
             <!--<li class="mb-3"><a class="text-color" href="courses.html">Courses</a></li>-->
-            <li class="mb-3"><a class="text-color" href={% url 'documentation' %}>Documentation</a></li>
+            <li class="mb-3"><a class="text-color" href={% url 'adminDocumentation' %}>Documentation</a></li>
             <!--<li class="mb-3"><a class="text-color" href="gallary.html">Gallary</a></li>-->
-            <li class="mb-3"><a class="text-color" href={% url 'faqs' %}>FAQs</a></li>
+            <li class="mb-3"><a class="text-color" href={% url 'adminFaqs' %}>FAQs</a></li>
           </ul>
         </div>
  

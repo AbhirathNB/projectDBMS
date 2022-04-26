@@ -80,7 +80,7 @@ class studentidpassword(models.Model):
          unique_together = (('studentid', 'studentpassword'),)
     
 class exammarklist1(models.Model):
-    examid = models.CharField(max_length=20, primary_key=True)
+    examid = models.CharField(max_length=20)
     studentid = models.ForeignKey(student3, on_delete=models.CASCADE)
     marks = models.IntegerField()
 

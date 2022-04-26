@@ -46,7 +46,7 @@
   <div class="navigation w-100">
     <div class="container">
       <nav class="navbar navbar-expand-lg navbar-dark p-0">
-        <a class="navbar-brand" href="#"><img src="/static/images/logo.png" alt="logo"></a>
+        <a class="navbar-brand" href="#"><img src="/static/ExamomaticLogo.png" alt="logo"></a>
         <button class="navbar-toggler rounded-0" type="button" data-toggle="collapse" data-target="#navigation"
           aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -58,10 +58,10 @@
               <a class="nav-link" href={% url 'adminDashboard' %}>Home</a>
             </li>
             <li class="nav-item @@about">
-              <a class="nav-link" href={% url 'about' %}>About Us</a>
+              <a class="nav-link" href={% url 'adminAbout' %}>About Us</a>
             </li>
             <li class="nav-item @@contact">
-              <a class="nav-link" href={% url 'contact' %}>Contact Us</a>
+              <a class="nav-link" href={% url 'adminContact' %}>Contact Us</a>
             </li>
             <li class="nav-item @@events">
               <a class="nav-link" href={% url 'entryPage' %} >Logout</a>
@@ -85,7 +85,7 @@
             <h1 class="text-white" data-animation-out="fadeOutRight" data-delay-out="5" data-duration-in=".3" data-animation-in="fadeInLeft" data-delay-in=".1">Welcome Admin!</h1>
             <p class="text-muted mb-4" data-animation-out="fadeOutRight" data-delay-out="5" data-duration-in=".3" data-animation-in="fadeInLeft" data-delay-in=".4">Conduct Exams with ease!
              </p>
-            <a href={% url 'about' %} class="btn btn-primary" data-animation-out="fadeOutRight" data-delay-out="5" data-duration-in=".3" data-animation-in="fadeInLeft" data-delay-in=".7">Know More</a>
+            <a href={% url 'adminAbout' %} class="btn btn-primary" data-animation-out="fadeOutRight" data-delay-out="5" data-duration-in=".3" data-animation-in="fadeInLeft" data-delay-in=".7">Know More</a>
           </div>
         </div>
       </div>
@@ -97,7 +97,7 @@
               </h1>
             <p class="text-muted mb-4" data-animation-out="fadeOutUp" data-delay-out="5" data-duration-in=".3" data-animation-in="fadeInDown" data-delay-in=".4">Revolutionize your online program with a modern testing experience
              </p>
-            <a href={% url 'about' %} class="btn btn-primary" data-animation-out="fadeOutUp" data-delay-out="5" data-duration-in=".3" data-animation-in="fadeInDown" data-delay-in=".7">Know More</a>
+            <a href={% url 'adminAbout' %} class="btn btn-primary" data-animation-out="fadeOutUp" data-delay-out="5" data-duration-in=".3" data-animation-in="fadeInDown" data-delay-in=".7">Know More</a>
           </div>
         </div>
       </div>
@@ -109,7 +109,7 @@
             <p class="text-muted mb-4" data-animation-out="fadeOutDown" data-delay-out="5" data-duration-in=".3" data-animation-in="fadeInUp" data-delay-in=".4">Our team is always here to answer any questions from students, 
               with award-winning support available around the clock.
               </p>
-            <a href={% url 'contact' %} class="btn btn-primary" data-animation-out="fadeOutDown" data-delay-out="5" data-duration-in=".3" data-animation-in="zoomIn" data-delay-in=".7">Click Here</a> 
+            <a href={% url 'adminContact' %} class="btn btn-primary" data-animation-out="fadeOutDown" data-delay-out="5" data-duration-in=".3" data-animation-in="zoomIn" data-delay-in=".7">Click Here</a> 
           </div>
         </div>
       </div>
@@ -125,7 +125,7 @@
       <div class="col-12 text-center">
         <h6 class="text-white font-secondary mb-0">Want to know more about us?</h6>
         <h2 class="section-title text-white">Click on the link given below</h2>
-        <a href= {% url 'about' %} class="btn btn-secondary">Know More</a>
+        <a href= {% url 'adminAbout' %} class="btn btn-secondary">Know More</a>
       </div>
     </div>
   </div>
@@ -215,7 +215,7 @@
       <div class="row">
         <div class="col-lg-4 col-sm-8 mb-5 mb-lg-0">
           <!-- logo -->
-          <a class="logo-footer" href="#"><img class="img-fluid mb-4" src="/static/images/logo.png" alt="logo"></a>
+          <a class="logo-footer" href="#"><img class="img-fluid mb-4" src="/static/ExamomaticLogo.png" alt="logo"></a>
           <ul class="list-unstyled">
             <li class="mb-2">19 Mile Road, Shamirpet, Hyderabad, Telangana, India</li>
             <li class="mb-2">+91 90345 67899</li>
@@ -227,9 +227,9 @@
         <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
           <h4 class="text-white mb-5">COMPANY</h4>
           <ul class="list-unstyled">
-            <li class="mb-3"><a class="text-color" href= {% url 'about' %} >About Us</a></li>
+            <li class="mb-3"><a class="text-color" href= {% url 'adminAbout' %} >About Us</a></li>
             <!--<li class="mb-3"><a class="text-color" href="teacher.html">Our Teacher</a></li>-->
-            <li class="mb-3"><a class="text-color" href= {% url 'contact' %} >Contact Us</a></li>
+            <li class="mb-3"><a class="text-color" href= {% url 'adminContact' %} >Contact Us</a></li>
             <!--<li class="mb-3"><a class="text-color" href="blog.html">Blog</a></li>-->
           </ul>
         </div>
@@ -238,9 +238,9 @@
           <h4 class="text-white mb-5">LINKS</h4>
           <ul class="list-unstyled">
             <!--<li class="mb-3"><a class="text-color" href="courses.html">Courses</a></li>-->
-            <li class="mb-3"><a class="text-color" href={% url 'documentation' %}>Documentation</a></li>
+            <li class="mb-3"><a class="text-color" href={% url 'adminDocumentation' %}>Documentation</a></li>
             <!--<li class="mb-3"><a class="text-color" href="gallary.html">Gallary</a></li>-->
-            <li class="mb-3"><a class="text-color" href={% url 'faqs' %}>FAQs</a></li>
+            <li class="mb-3"><a class="text-color" href={% url 'adminFaqs' %}>FAQs</a></li>
           </ul>
         </div>
       </div> 
