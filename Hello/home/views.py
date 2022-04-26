@@ -10,6 +10,9 @@ def entryPage(request):
 def studentLogin(request):
     return render(request, 'studentLogin.html')
 
+def studentDashboard(request):
+    return render(request, 'studentDashboard.html')
+
 def adminLogin(request):
     return render(request, 'adminLogin.html')
     
@@ -18,4 +21,7 @@ def index(request):
     #return HttpResponse("this is homepage")
 
 def about(request):
-    return HttpResponse("this is aboutpage")
+    return render(request, 'about.html')
+
+def contact(request):
+    return render(request, 'contact.html')

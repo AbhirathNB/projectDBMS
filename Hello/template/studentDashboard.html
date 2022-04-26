@@ -69,7 +69,7 @@
   <div class="navigation w-100">
     <div class="container">
       <nav class="navbar navbar-expand-lg navbar-dark p-0">
-        <a class="navbar-brand" href={% url 'home' %}><img src="/static/images/logo.png" alt="logo"></a>
+        <a class="navbar-brand" href="#"><img src="/static/images/logo.png" alt="logo"></a>
         <button class="navbar-toggler rounded-0" type="button" data-toggle="collapse" data-target="#navigation"
           aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -78,16 +78,16 @@
         <div class="collapse navbar-collapse" id="navigation">
           <ul class="navbar-nav ml-auto text-center">
             <li class="nav-item active">
-              <a class="nav-link" href= {% url 'home' %}>Home</a>
+              <a class="nav-link" href={% url 'studentDashboard' %}>Home</a>
             </li>
             <li class="nav-item @@about">
-              <a class="nav-link" href="about.html">About Us</a>
+              <a class="nav-link" href={% url 'about' %}>About Us</a>
             </li>
             <li class="nav-item @@contact">
-              <a class="nav-link" href="contact.html">Contact Us</a>
+              <a class="nav-link" href={% url 'contact' %}>Contact Us</a>
             </li>
             <li class="nav-item @@events">
-              <a class="nav-link" href="events.html">Logout</a>
+              <a class="nav-link" href={% url 'entryPage' %} >Logout</a>
             </li>
              <!--<li class="nav-item @@blog">
               <a class="nav-link" href="blog.html">BLOG</a>
@@ -432,7 +432,7 @@ Modal
       <div class="col-12 text-center">
         <h6 class="text-white font-secondary mb-0">Want to know more about us?</h6>
         <h2 class="section-title text-white">Click on the link given below</h2>
-        <a href="about.html" class="btn btn-secondary">Know More</a>
+        <a href= {% url 'about' %} class="btn btn-secondary">Know More</a>
       </div>
     </div>
   </div>
@@ -692,21 +692,21 @@ Modal
       <div class="row">
         <div class="col-lg-4 col-sm-8 mb-5 mb-lg-0">
           <!-- logo -->
-          <a class="logo-footer" href={% url 'home' %}><img class="img-fluid mb-4" src="/static/images/logo.png" alt="logo"></a>
+          <a class="logo-footer" href="#"><img class="img-fluid mb-4" src="/static/images/logo.png" alt="logo"></a>
           <ul class="list-unstyled">
-            <li class="mb-2">23621 15 Mile Rd #C104, Clinton MI, 48035, New York, USA</li>
-            <li class="mb-2">+1 (2) 345 6789</li>
-            <li class="mb-2">+1 (2) 345 6789</li>
-            <li class="mb-2">contact@yourdomain.com</li>
+            <li class="mb-2">19 Mile Road, Shamirpet, Hyderabad, Telangana, India</li>
+            <li class="mb-2">+91 90345 67899</li>
+            <li class="mb-2">+91 84655 06789</li>
+            <li class="mb-2">contact@admin.examomatic.ac.in</li>
           </ul>
         </div>
         <!-- company -->
         <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
           <h4 class="text-white mb-5">COMPANY</h4>
           <ul class="list-unstyled">
-            <li class="mb-3"><a class="text-color" href="about.html">About Us</a></li>
-            <li class="mb-3"><a class="text-color" href="teacher.html">Our Teacher</a></li>
-            <li class="mb-3"><a class="text-color" href="contact.html">Contact</a></li>
+            <li class="mb-3"><a class="text-color" href= {% url 'about' %} >About Us</a></li>
+            <!--<li class="mb-3"><a class="text-color" href="teacher.html">Our Teacher</a></li>-->
+            <li class="mb-3"><a class="text-color" href= {% url 'contact' %} >Contact Us</a></li>
             <!--<li class="mb-3"><a class="text-color" href="blog.html">Blog</a></li>-->
           </ul>
         </div>
@@ -714,22 +714,22 @@ Modal
         <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
           <h4 class="text-white mb-5">LINKS</h4>
           <ul class="list-unstyled">
-            <li class="mb-3"><a class="text-color" href="courses.html">Courses</a></li>
-            <li class="mb-3"><a class="text-color" href="event.html">Events</a></li>
+            <!--<li class="mb-3"><a class="text-color" href="courses.html">Courses</a></li>-->
+            <li class="mb-3"><a class="text-color" href="event.html">Documentation</a></li>
             <!--<li class="mb-3"><a class="text-color" href="gallary.html">Gallary</a></li>-->
             <li class="mb-3"><a class="text-color" href="faqs.html">FAQs</a></li>
           </ul>
         </div>
         <!-- support -->
-        <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
+        <!--<div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
           <h4 class="text-white mb-5">SUPPORT</h4>
           <ul class="list-unstyled">
             <li class="mb-3"><a class="text-color" href="#">Forums</a></li>
             <li class="mb-3"><a class="text-color" href="#">Documentation</a></li>
-            <!--<li class="mb-3"><a class="text-color" href="#">Language</a></li>-->
+            <li class="mb-3"><a class="text-color" href="#">Language</a></li>
             <li class="mb-3"><a class="text-color" href="#">Release Status</a></li>
           </ul>
-        </div>
+        </div>-->
         <!-- support
         <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
           <h4 class="text-white mb-5">RECOMMEND</h4>
@@ -743,7 +743,7 @@ Modal
       </div> 
     </div>
   </div>
-  <!-- copyright -->
+  <!-- copyright
   <div class="copyright py-4 bg-footer">
     <div class="container">
       <div class="row">
@@ -755,19 +755,19 @@ Modal
             </script> 
             © themefisher</p>
         </div>
-        <!--<div class="col-sm-5 text-sm-right text-center">
+        <div class="col-sm-5 text-sm-right text-center">
           <ul class="list-inline">
             <li class="list-inline-item"><a class="d-inline-block p-2" href="#"><i class="ti-facebook text-primary"></i></a></li>
             <li class="list-inline-item"><a class="d-inline-block p-2" href="#"><i class="ti-twitter-alt text-primary"></i></a></li>
             <li class="list-inline-item"><a class="d-inline-block p-2" href="#"><i class="ti-linkedin text-primary"></i></a></li>
             <li class="list-inline-item"><a class="d-inline-block p-2" href="#"><i class="ti-instagram text-primary"></i></a></li>
           </ul>
-        </div>-->
+        </div>
       </div>
     </div>
   </div>
 </footer>
-<!-- /footer -->
+/footer -->
 
 <!-- jQuery -->
 <script src="/static/plugins/jQuery/jquery.min.js"></script>

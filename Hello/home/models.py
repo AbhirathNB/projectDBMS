@@ -71,6 +71,13 @@ class student4(models.Model):
 
     class Meta:    
         unique_together = (('studentid', 'adminid'),)
+        
+class studentidpassword(models.Model):
+    studentid = models.ForeignKey(student3, on_delete=models.CASCADE)
+    studentpassword = models.CharField(max_length = 255)
+
+    class Meta:
+         unique_together = (('studentid', 'studentpassword'),)
     
 class exammarklist1(models.Model):
     examid = models.CharField(max_length=20, primary_key=True)
