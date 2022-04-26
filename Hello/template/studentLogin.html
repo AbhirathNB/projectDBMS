@@ -32,13 +32,15 @@
 	
 	
 		<div class="right">	
-		<h5>Student</h5>
+			<form action = "" method = "POST" id = "form">
+				{% csrf_token %}
+			<h5>Student</h5>
 		<h5>Login</h5>
 		<p>Log in with your registered account here &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</p> 
 		<div class="inputs">
-			<input type="text" placeholder="Username">
+			<input type="text" placeholder="Username" required>
 			<br>
-			<input type="password" placeholder="Password">
+			<input type="password" placeholder="Password" required>
 		</div>
 			
 			<br><br>
@@ -53,7 +55,8 @@
 		</div>
 			
 			<br>
-			<button><a href= {% url 'studentDashboard' %} style = "text-decoration: none; color:#fff"> Login</a></button>
+			<button type = "submit"> Login</button>
+		</form>
 	</div>
 	
 </div>

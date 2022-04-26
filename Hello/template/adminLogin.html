@@ -32,14 +32,17 @@
 	
 	
 	<div class="right">	
-		<form action = "POST">
+		<form action = "" method = "POST" id = "form">
+			{% csrf_token %}
 			<h5>Admin</h5>
 			<h5>Login</h5>
 			<p>Log in with your registered account here &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</p> 
 			<div class="inputs">
-				<input type="text" placeholder="username" name = "username">
+				<input type="text" placeholder="username" name = "username" required>
+				
 				<br>
-				<input type="password" placeholder="password" name = "password">
+				<input type="password" placeholder="password" name = "password" required>
+			
 			</div>
 				
 			<br><br>
@@ -54,8 +57,8 @@
 			</div>
 				
 				<br>
-				<button><a href={% url 'adminDashboard' %} style = "text-decoration: none; color : #fff">Login</a></button>
-		</form>>
+				<button type = "submit">Login</button>
+		</form>
 	</div>
 	
 </div>

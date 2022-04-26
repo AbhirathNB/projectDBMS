@@ -1,3 +1,4 @@
+from asyncio.windows_events import NULL
 from django.http import HttpRequest
 from django.shortcuts import redirect, render, HttpResponse
 from home.models import *
@@ -8,6 +9,18 @@ def entryPage(request):
     return render(request, 'entryPage.html')
 
 def studentLogin(request):
+    if request.method == 'POST':
+        username = request.POST.get('username')
+        password = request.POST.get('password')
+
+        #user = adminidpassword.objects.check(adminid=username, adminpassword=password)
+        user = studentidpassword.objects.all()
+        user.filter(studentid_id = username, studentpassword = password)
+        if user is not NULL:
+            return redirect('/studentDashboard')
+        else:
+            return redirect('/studentLogin')
+    
     return render(request, 'studentLogin.html')
 
 def studentDashboard(request):
@@ -24,8 +37,8 @@ def adminLogin(request):
 
         #user = adminidpassword.objects.check(adminid=username, adminpassword=password)
         user = adminidpassword.objects.all()
-        user.filter(adminid = username, adminpassword = password)
-        if user is not None:
+        user.filter(adminid_id = username, adminpassword = password)
+        if user is not NULL:
             return redirect('/adminDashboard')
         else:
             return redirect('/adminLogin')
