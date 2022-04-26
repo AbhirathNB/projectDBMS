@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <meta charset="utf-8">
+  <title>Home | Examomatic</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <!-- ** Plugins Needed for the Project ** -->
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="/static/plugins/bootstrap/bootstrap.min.css">
+  <!-- slick slider -->
+  <link rel="stylesheet" href="/static/plugins/slick/slick.css">
+  <!-- themefy-icon -->
+  <link rel="stylesheet" href="/static/plugins/themify-icons/themify-icons.css">
+  <!-- animation css -->
+  <link rel="stylesheet" href="/static/plugins/animate/animate.css">
+  <!-- aos -->
+  <link rel="stylesheet" href="/static/plugins/aos/aos.css">
+  <!-- venobox popup -->
+  <link rel="stylesheet" href="/static/plugins/venobox/venobox.css">
+
+  <!-- Main Stylesheet -->
+  <link href="/static/css/style.css" rel="stylesheet">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="/static/images/favicon.png" type="image/x-icon">
+  <link rel="icon" href="/static/images/favicon.png" type="image/x-icon">
+
+</head>
+
+<body>
+  <!-- preloader start -->
+  <div class="preloader">
+    <img src="/static/images/preloader.gif" alt="preloader">
+  </div>
+  <!-- preloader end -->
+
+<!-- header -->
+<header class="fixed-top header">
+  
+  <!-- navbar -->
+  <div class="navigation w-100">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-dark p-0">
+        <a class="navbar-brand" href="#"><img src="/static/images/logo.png" alt="logo"></a>
+        <button class="navbar-toggler rounded-0" type="button" data-toggle="collapse" data-target="#navigation"
+          aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navigation">
+          <ul class="navbar-nav ml-auto text-center">
+            <li class="nav-item active">
+              <a class="nav-link" href={% url 'adminDashboard' %}>Home</a>
+            </li>
+            <li class="nav-item @@about">
+              <a class="nav-link" href={% url 'about' %}>About Us</a>
+            </li>
+            <li class="nav-item @@contact">
+              <a class="nav-link" href={% url 'contact' %}>Contact Us</a>
+            </li>
+            <li class="nav-item @@events">
+              <a class="nav-link" href={% url 'entryPage' %} >Logout</a>
+            </li>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+</header>
+<!-- /header -->
+<!-- hero slider -->
+<section class="hero-section overlay bg-cover" data-background="/static/images/banner/banner-1.jpg">
+  <div class="container">
+    <div class="hero-slider">
+      <!-- slider item -->
+      <div class="hero-slider-item">
+        <div class="row">
+          <div class="col-md-8">
+            <h1 class="text-white" data-animation-out="fadeOutRight" data-delay-out="5" data-duration-in=".3" data-animation-in="fadeInLeft" data-delay-in=".1">Welcome Admin!</h1>
+            <p class="text-muted mb-4" data-animation-out="fadeOutRight" data-delay-out="5" data-duration-in=".3" data-animation-in="fadeInLeft" data-delay-in=".4">Conduct Exams with ease!
+             </p>
+            <a href={% url 'about' %} class="btn btn-primary" data-animation-out="fadeOutRight" data-delay-out="5" data-duration-in=".3" data-animation-in="fadeInLeft" data-delay-in=".7">Know More</a>
+          </div>
+        </div>
+      </div>
+      <!-- slider item -->
+      <div class="hero-slider-item">
+        <div class="row">
+          <div class="col-md-8">
+            <h1 class="text-white" data-animation-out="fadeOutUp" data-delay-out="5" data-duration-in=".3" data-animation-in="fadeInDown" data-delay-in=".1">Awesome Features
+              </h1>
+            <p class="text-muted mb-4" data-animation-out="fadeOutUp" data-delay-out="5" data-duration-in=".3" data-animation-in="fadeInDown" data-delay-in=".4">Revolutionize your online program with a modern testing experience
+             </p>
+            <a href={% url 'about' %} class="btn btn-primary" data-animation-out="fadeOutUp" data-delay-out="5" data-duration-in=".3" data-animation-in="fadeInDown" data-delay-in=".7">Know More</a>
+          </div>
+        </div>
+      </div>
+      <!-- slider item -->
+      <div class="hero-slider-item">
+        <div class="row">
+          <div class="col-md-8">
+            <h1 class="text-white" data-animation-out="fadeOutDown" data-delay-out="5" data-duration-in=".3" data-animation-in="fadeInUp" data-delay-in=".1">Feel Free to Contact Us!</h1>
+            <p class="text-muted mb-4" data-animation-out="fadeOutDown" data-delay-out="5" data-duration-in=".3" data-animation-in="fadeInUp" data-delay-in=".4">Our team is always here to answer any questions from students, 
+              with award-winning support available around the clock.
+              </p>
+            <a href={% url 'contact' %} class="btn btn-primary" data-animation-out="fadeOutDown" data-delay-out="5" data-duration-in=".3" data-animation-in="zoomIn" data-delay-in=".7">Click Here</a> 
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /hero slider -->
+
+<!-- cta -->
+<section class="section bg-primary">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h6 class="text-white font-secondary mb-0">Want to know more about us?</h6>
+        <h2 class="section-title text-white">Click on the link given below</h2>
+        <a href= {% url 'about' %} class="btn btn-secondary">Know More</a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /cta -->
+
+
+<!-- blog -->
+<section class="section pt-0">
+  <div class="container">
+    <div class="row">
+      <div class="col-12"><br>
+        <h2 class="section-title">Here's What All You Can Do!</h2>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+  <!-- blog post -->
+  <article class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
+    <div class="card rounded-0 border-bottom border-primary border-top-0 border-left-0 border-right-0 hover-shadow">
+      <img class="card-img-top rounded-0" src="/static/images/blog/post-1.jpg" alt="Post thumb">
+      <div class="card-body">
+        <!-- post meta -->
+        <ul class="list-inline mb-3">
+          <!-- post date -->
+          <!-- <li class="list-inline-item mr-3 ml-0">August 28, 2018</li> -->
+          <!-- author -->
+          <!-- <li class="list-inline-item mr-3 ml-0">By Somrat Sorkar</li> -->
+        </ul>
+        <a href="blog-single.html">
+          <h4 class="card-title">Manage Students</h4>
+        </a>
+        <p class="card-text">By clicking below, you will be able to add/remove students</p>
+        <a href="blog-single.html" class="btn btn-primary btn-sm">Click here</a>
+      </div>
+    </div>
+  </article>
+  <!-- blog post -->
+  <article class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
+    <div class="card rounded-0 border-bottom border-primary border-top-0 border-left-0 border-right-0 hover-shadow">
+      <img class="card-img-top rounded-0" src="/static/images/blog/post-2.jpg" alt="Post thumb">
+      <div class="card-body">
+        <!-- post meta -->
+        <ul class="list-inline mb-3">
+          <!-- post date -->
+          <!-- <li class="list-inline-item mr-3 ml-0">August 13, 2018</li> -->
+          <!-- author -->
+          <!-- <li class="list-inline-item mr-3 ml-0">By Jonathon Drew</li> -->
+        </ul>
+        <a href="blog-single.html">
+          <h4 class="card-title">Create an Exam</h4>
+        </a>
+        <p class="card-text">By clicking below, you will be able to create exams</p>
+        <a href="blog-single.html" class="btn btn-primary btn-sm">Click Here</a>
+      </div>
+    </div>
+  </article>
+  <!-- blog post -->
+  <article class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
+    <div class="card rounded-0 border-bottom border-primary border-top-0 border-left-0 border-right-0 hover-shadow">
+      <img class="card-img-top rounded-0" src="/static/images/blog/post-3.jpg" alt="Post thumb">
+      <div class="card-body">
+        <!-- post meta -->
+        <ul class="list-inline mb-3">
+          <!-- post date -->
+          <!-- <li class="list-inline-item mr-3 ml-0">August 24, 2018</li> -->
+          <!-- author -->
+          <!-- <li class="list-inline-item mr-3 ml-0">By Alex Pitt</li> -->
+        </ul>
+        <a href="blog-single.html">
+          <h4 class="card-title">Previous Results</h4>
+        </a>
+        <p class="card-text">By clicking below, you will be able to view results of previously conducted exams</p>
+        <a href="blog-single.html" class="btn btn-primary btn-sm">Click here</a>
+      </div>
+    </div>
+  </article>
+</div>
+  </div>
+</section>
+<!-- /blog -->
+
+<!-- footer -->
+<footer>
+  
+  <div class="footer bg-footer section border-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-sm-8 mb-5 mb-lg-0">
+          <!-- logo -->
+          <a class="logo-footer" href="#"><img class="img-fluid mb-4" src="/static/images/logo.png" alt="logo"></a>
+          <ul class="list-unstyled">
+            <li class="mb-2">19 Mile Road, Shamirpet, Hyderabad, Telangana, India</li>
+            <li class="mb-2">+91 90345 67899</li>
+            <li class="mb-2">+91 84655 06789</li>
+            <li class="mb-2">contact@admin.examomatic.ac.in</li>
+          </ul>
+        </div>
+        <!-- company -->
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
+          <h4 class="text-white mb-5">COMPANY</h4>
+          <ul class="list-unstyled">
+            <li class="mb-3"><a class="text-color" href= {% url 'about' %} >About Us</a></li>
+            <!--<li class="mb-3"><a class="text-color" href="teacher.html">Our Teacher</a></li>-->
+            <li class="mb-3"><a class="text-color" href= {% url 'contact' %} >Contact Us</a></li>
+            <!--<li class="mb-3"><a class="text-color" href="blog.html">Blog</a></li>-->
+          </ul>
+        </div>
+        <!-- links -->
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
+          <h4 class="text-white mb-5">LINKS</h4>
+          <ul class="list-unstyled">
+            <!--<li class="mb-3"><a class="text-color" href="courses.html">Courses</a></li>-->
+            <li class="mb-3"><a class="text-color" href={% url 'documentation' %}>Documentation</a></li>
+            <!--<li class="mb-3"><a class="text-color" href="gallary.html">Gallary</a></li>-->
+            <li class="mb-3"><a class="text-color" href={% url 'faqs' %}>FAQs</a></li>
+          </ul>
+        </div>
+      </div> 
+    </div>
+  </div>
+
+<!-- jQuery -->
+<script src="/static/plugins/jQuery/jquery.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="/static/plugins/bootstrap/bootstrap.min.js"></script>
+<!-- slick slider -->
+<script src="/static/plugins/slick/slick.min.js"></script>
+<!-- aos -->
+<script src="/static/plugins/aos/aos.js"></script>
+<!-- venobox popup -->
+<script src="/static/plugins/venobox/venobox.min.js"></script>
+<!-- filter -->
+<script src="/static/plugins/filterizr/jquery.filterizr.min.js"></script>
+<!-- google map -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu5nZKbeK-WHQ70oqOWo-_4VmwOwKP9YQ"></script>
+<script src="/static/plugins/google-map/gmap.js"></script>
+
+<!-- Main Script -->
+<script src="/static/js/script.js"></script>
+
+</body>
+</html>

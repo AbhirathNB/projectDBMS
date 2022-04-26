@@ -13,6 +13,9 @@ def studentLogin(request):
 def studentDashboard(request):
     return render(request, 'studentDashboard.html')
 
+def adminDashboard(request):
+    return render(request, 'adminDashboard.html')
+
 def adminLogin(request):
     return render(request, 'adminLogin.html')
     
