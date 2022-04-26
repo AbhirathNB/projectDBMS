@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Examomatic</title>
+  <title>About Us | Examomatic</title>
 
   <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -270,99 +270,9 @@ Modal -->
     </div>
   </div>
 </section>
-<!-- /success story -->
 
-<!-- teachers 
-<section class="section">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-12">
-          <h2 class="section-title">Our Teachers</h2>
-        </div>
-        <!-- teacher
-        <div class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
-          <div class="card border-0 rounded-0 hover-shadow">
-            <img class="card-img-top rounded-0" src="/static/images/teachers/teacher-1.jpg" alt="teacher">
-            <div class="card-body">
-              <a href="teacher-single.html">
-                <h4 class="card-title">Jacke Masito</h4>
-              </a>
-              <div class="d-flex justify-content-between">
-                <span>Teacher</span>
-                <ul class="list-inline">
-                  <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-facebook"></i></a></li>
-                  <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-twitter-alt"></i></a></li>
-                  <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-google"></i></a></li>
-                  <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-linkedin"></i></a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- teacher 
-        <div class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
-          <div class="card border-0 rounded-0 hover-shadow">
-            <img class="card-img-top rounded-0" src="/static/images/teachers/teacher-2.jpg" alt="teacher">
-            <div class="card-body">
-              <a href="teacher-single.html">
-                <h4 class="card-title">Clark Malik</h4>
-              </a>
-              <div class="d-flex justify-content-between">
-                <span>Teacher</span>
-                <ul class="list-inline">
-                  <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-facebook"></i></a></li>
-                  <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-twitter-alt"></i></a></li>
-                  <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-google"></i></a></li>
-                  <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-linkedin"></i></a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- teacher 
-        <div class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
-          <div class="card border-0 rounded-0 hover-shadow">
-            <img class="card-img-top rounded-0" src="/static/images/teachers/teacher-3.jpg" alt="teacher">
-            <div class="card-body">
-              <a href="teacher-single.html">
-                <h4 class="card-title">John Doe</h4>
-              </a>
-              <div class="d-flex justify-content-between">
-                <span>Teacher</span>
-                <ul class="list-inline">
-                  <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-facebook"></i></a></li>
-                  <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-twitter-alt"></i></a></li>
-                  <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-google"></i></a></li>
-                  <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-linkedin"></i></a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
- /teachers -->
-
-<!-- footer -->
 <footer>
-  <!-- newsletter 
-  <div class="newsletter">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-9 ml-auto bg-primary py-5 newsletter-block">
-          <h3 class="text-white">Subscribe Now</h3>
-          <form action="#">
-            <div class="input-wrapper">
-              <input type="email" class="form-control border-0" id="newsletter" name="newsletter" placeholder="Enter Your Email...">
-              <button type="submit" value="send" class="btn btn-primary">Join</button>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
-  footer content -->
+ 
   <div class="footer bg-footer section border-bottom">
     <div class="container">
       <div class="row">
@@ -380,9 +290,9 @@ Modal -->
         <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
           <h4 class="text-white mb-5">COMPANY</h4>
           <ul class="list-unstyled">
-            <li class="mb-3"><a class="text-color" href="about.html">About Us</a></li>
+            <li class="mb-3"><a class="text-color" href={% url 'about' %}>About Us</a></li>
             <!--<li class="mb-3"><a class="text-color" href="teacher.html">Our Teacher</a></li>-->
-            <li class="mb-3"><a class="text-color" href="contact.html">Contact Us</a></li>
+            <li class="mb-3"><a class="text-color" href={% url 'contact' %}>Contact Us</a></li>
             <!--<li class="mb-3"><a class="text-color" href="blog.html">Blog</a></li>-->
           </ul>
         </div>
@@ -391,9 +301,9 @@ Modal -->
           <h4 class="text-white mb-5">LINKS</h4>
           <ul class="list-unstyled">
             <!--<li class="mb-3"><a class="text-color" href="courses.html">Courses</a></li>-->
-            <li class="mb-3"><a class="text-color" href="event.html">Documentation</a></li>
+            <li class="mb-3"><a class="text-color" href={% url 'documentation' %}>Documentation</a></li>
             <!--<li class="mb-3"><a class="text-color" href="gallary.html">Gallary</a></li>-->
-            <li class="mb-3"><a class="text-color" href="faqs.html">FAQs</a></li>
+            <li class="mb-3"><a class="text-color" href={% url 'faqs' %}>FAQs</a></li>
           </ul>
         </div>
         <!-- support
