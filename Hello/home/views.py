@@ -30,7 +30,7 @@ def adminDashboard(request):
    
     return render(request, 'adminDashboard.html')
 
-def adminLogin(request):
+def adminLoginPage(request):
     if request.method == 'POST':
         username = request.POST.get('username')
         password = request.POST.get('password')
@@ -72,3 +72,19 @@ def adminAbout(request):
 
 def adminContact(request):
     return render(request, 'adminContact.html')
+
+def previousResults(request):
+    return render(request, 'previousResults.html')
+
+def viewRank(request):
+    return render(request, 'viewRank.html')
+
+def attemptExam(request):
+    return render(request, 'attemptExam.html')
+
+def manageStudents(request):
+    return render(request, 'manageStudents.html')
+
+def createExam(request):
+    return render(request, 'createExam.html')
+

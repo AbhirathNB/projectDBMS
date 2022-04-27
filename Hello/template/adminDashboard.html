@@ -138,7 +138,7 @@
   <div class="container">
     <div class="row">
       <div class="col-12"><br>
-        <h2 class="section-title">Here's What All You Can Do!</h2>
+        <h2 class="section-title"><center>Here's What All You Can Do!</center></h2>
       </div>
     </div>
     <div class="row justify-content-center">
@@ -149,16 +149,12 @@
       <div class="card-body">
         <!-- post meta -->
         <ul class="list-inline mb-3">
-          <!-- post date -->
-          <!-- <li class="list-inline-item mr-3 ml-0">August 28, 2018</li> -->
-          <!-- author -->
-          <!-- <li class="list-inline-item mr-3 ml-0">By Somrat Sorkar</li> -->
         </ul>
-        <a href="blog-single.html">
+        <a href={% url 'manageStudents' %}>
           <h4 class="card-title">Manage Students</h4>
         </a>
         <p class="card-text">By clicking below, you will be able to add/remove students</p>
-        <a href="blog-single.html" class="btn btn-primary btn-sm">Click here</a>
+        <a href={% url 'manageStudents' %} class="btn btn-primary btn-sm">Click here</a>
       </div>
     </div>
   </article>
@@ -169,38 +165,17 @@
       <div class="card-body">
         <!-- post meta -->
         <ul class="list-inline mb-3">
-          <!-- post date -->
-          <!-- <li class="list-inline-item mr-3 ml-0">August 13, 2018</li> -->
-          <!-- author -->
-          <!-- <li class="list-inline-item mr-3 ml-0">By Jonathon Drew</li> -->
+          
         </ul>
-        <a href="blog-single.html">
+        <a href={% url 'createExam' %}>
           <h4 class="card-title">Create an Exam</h4>
         </a>
         <p class="card-text">By clicking below, you will be able to create exams</p>
-        <a href="blog-single.html" class="btn btn-primary btn-sm">Click Here</a>
+        <a href={% url 'createExam' %} class="btn btn-primary btn-sm">Click Here</a>
       </div>
     </div>
   </article>
-  <!-- blog post -->
-  <article class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
-    <div class="card rounded-0 border-bottom border-primary border-top-0 border-left-0 border-right-0 hover-shadow">
-      <img class="card-img-top rounded-0" src="/static/images/blog/post-3.jpg" alt="Post thumb">
-      <div class="card-body">
-        <!-- post meta -->
-        <ul class="list-inline mb-3">
-          <!-- post date -->
-          <!-- <li class="list-inline-item mr-3 ml-0">August 24, 2018</li> -->
-          <!-- author -->
-          <!-- <li class="list-inline-item mr-3 ml-0">By Alex Pitt</li> -->
-        </ul>
-        <a href="blog-single.html">
-          <h4 class="card-title">Previous Results</h4>
-        </a>
-        <p class="card-text">By clicking below, you will be able to view results of previously conducted exams</p>
-        <a href="blog-single.html" class="btn btn-primary btn-sm">Click here</a>
-      </div>
-    </div>
+
   </article>
 </div>
   </div>
