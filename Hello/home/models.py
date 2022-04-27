@@ -98,7 +98,8 @@ class exammarklist3(models.Model):
     adminid = models.ForeignKey (admin2, on_delete=models.CASCADE )
     studentid = models.ForeignKey(student3, on_delete=models.CASCADE)
 
-    class Meta:    
+    class Meta:   
+        # ordering = ('marks',) 
         unique_together = (('studentid', 'examid', 'adminid'),)
          
 class examinationtype(models.Model):

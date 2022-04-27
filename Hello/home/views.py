@@ -1,4 +1,6 @@
 from asyncio.windows_events import NULL
+#from typing_extensions import Self
+from django.db import connection
 from django.http import HttpRequest
 from django.shortcuts import redirect, render, HttpResponse
 from home.models import *
@@ -13,14 +15,16 @@ def studentLogin(request):
         username = request.POST.get('username')
         password = request.POST.get('password')
 
-        #user = adminidpassword.objects.check(adminid=username, adminpassword=password)
-        user = studentidpassword.objects.all()
-        user.filter(studentid_id = username, studentpassword = password)
-        if user is not NULL:
+        user = studentidpassword.objects.raw(
+        f"SELECT * FROM home_studentidpassword WHERE studentid_id='{username}' and studentpassword = '{password}'"
+    )
+
+        if len(user) != 0:
+
             return redirect('/studentDashboard')
         else:
             return redirect('/studentLogin')
-    
+          
     return render(request, 'studentLogin.html')
 
 def studentDashboard(request):
@@ -35,15 +39,19 @@ def adminLoginPage(request):
         username = request.POST.get('username')
         password = request.POST.get('password')
 
-        #user = adminidpassword.objects.check(adminid=username, adminpassword=password)
-        user = adminidpassword.objects.all()
-        user.filter(adminid_id = username, adminpassword = password)
-        if user is not NULL:
+        user = adminidpassword.objects.raw(
+        f"SELECT * FROM home_adminidpassword WHERE adminid_id='{username}' and adminpassword = '{password}'"
+    )
+
+        if len(user) != 0:
+
             return redirect('/adminDashboard')
         else:
             return redirect('/adminLogin')
-    
+          
     return render(request, 'adminLogin.html')
+
+
     
 def index(request):
     return render(request, 'index.html')
