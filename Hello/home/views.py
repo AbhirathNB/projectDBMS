@@ -84,20 +84,23 @@ def adminContact(request):
 def previousResults(request):
     return render(request, 'previousResults.html')
 
-def viewRank(request):
+def viewRank(request, dict = {}):
     if request.method == 'POST':
         examid = request.POST.get("eid")
 
-        user = exammarklist1.objects.raw(f"SELECT id, marks, studentid_id from home_exammarklist1 where examid = '{examid}' order by marks")
-        print("hi")
-        return redirect('/viewRank1', {"id" : user})
+        user = exammarklist1.objects.raw(f"SELECT * from home_exammarklist1 where examid = '{examid}' order by marks")
+        return redirect('/viewRank1', {"id": user})
             
      
 
 
-    return render(request, 'viewRank.html')
+    return render(request, 'viewRank.html', dict)
 
-def viewRank1(request, dict={}):
+def viewRank1(request, dict = {}):
+    print(dict)
+    if dict:
+        print("bladder")
+        # print(dict)
     return render(request, 'viewRank1.html', dict)
 
 def attemptExam(request):

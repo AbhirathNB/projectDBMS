@@ -54,13 +54,13 @@
         <div class="collapse navbar-collapse" id="navigation">
           <ul class="navbar-nav ml-auto text-center">
             <li class="nav-item @@home">
-              <a class="nav-link" href={% url 'adminDashboard' %}>Home</a>
+              <a class="nav-link" href={% url 'studentDashboard' %}>Home</a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href={% url 'adminAbout' %}>About Us</a>
+              <a class="nav-link" href={% url 'about' %}>About Us</a>
             </li>
             <li class="nav-item @@contact">
-              <a class="nav-link" href= {% url 'adminContact' %} >Contact Us</a>
+              <a class="nav-link" href= {% url 'contact' %} >Contact Us</a>
             </li>
             <li class="nav-item @@contact">
               <a class="nav-link" href= {% url 'entryPage' %}>Logout</a>
@@ -110,13 +110,56 @@
 </section>
  /about -->
 
+<br><br><br>
+<div class = "container">
+<div class="col-md-12 col-sm-12 mb-12 mb-md-0" >
+  <table class="table table-bordered">
+    
+    <thead>
+      <tr>
+        <th scope="col" >Student ID</th>
+        <th scope="col">Marks</th>
+        
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td scope="row">S0001</th>
+        <td scope="row">91</th>
+      </tr>
+      <tr>
+        <td scope="row">S0008</td>
+        <td scope="row">86</td>
+      </tr>
+      <tr>
+        <td scope="row">S0003</td>
+        <td scope="row">82</td>
+      </tr>
+      <tr>
+        <td scope="row">S0002</td>
+        <td scope="row">78</td>
+      </tr>
+      <tr>
+        <td scope="row">S0006</td>
+        <td scope="row">67</td>
+      </tr>
+      <tr>
+        <td scope="row">S0009</td>
+        <td scope="row">47</td>
+      </tr>
+    </tbody>
+  </table>
+</div> 
+</div>
+
 <div class = "conatainer">
   <div class = "row">
     <div class="col-md-6 col-sm-6 mb-4 mb-md-0">
-    {% for i in "id" %}
-        {{ i.id}}
-        {{ i.studentid_id}}
-        {{ i.marks }}
+    {% for i in dict %}
+        <span>{{ i.id}}</span>
+        <span>{{ i.marks }}</span>
+        <span>{{ i.studentid_id}}</span>
+        
     {% endfor %}
     </div>
   </div>
@@ -192,9 +235,9 @@
         <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
           <h4 class="text-white mb-5">COMPANY</h4>
           <ul class="list-unstyled">
-            <li class="mb-3"><a class="text-color" href={% url 'adminAbout' %}>About Us</a></li>
+            <li class="mb-3"><a class="text-color" href={% url 'about' %}>About Us</a></li>
             <!--<li class="mb-3"><a class="text-color" href="teacher.html">Our Teacher</a></li>-->
-            <li class="mb-3"><a class="text-color" href={% url 'adminContact' %}>Contact Us</a></li>
+            <li class="mb-3"><a class="text-color" href={% url 'contact' %}>Contact Us</a></li>
             <!--<li class="mb-3"><a class="text-color" href="blog.html">Blog</a></li>-->
           </ul>
         </div>
@@ -203,9 +246,9 @@
           <h4 class="text-white mb-5">LINKS</h4>
           <ul class="list-unstyled">
             <!--<li class="mb-3"><a class="text-color" href="courses.html">Courses</a></li>-->
-            <li class="mb-3"><a class="text-color" href={% url 'adminDocumentation' %}>Documentation</a></li>
+            <li class="mb-3"><a class="text-color" href={% url 'documentation' %}>Documentation</a></li>
             <!--<li class="mb-3"><a class="text-color" href="gallary.html">Gallary</a></li>-->
-            <li class="mb-3"><a class="text-color" href={% url 'adminFaqs' %}>FAQs</a></li>
+            <li class="mb-3"><a class="text-color" href={% url 'faqs' %}>FAQs</a></li>
           </ul>
         </div>
         
