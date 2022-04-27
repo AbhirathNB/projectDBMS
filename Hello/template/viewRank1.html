@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Create Exam | Examomatic</title>
+  <title>View Rank | Examomatic</title>
 
   <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -79,67 +79,48 @@
     <div class="row">
       <div class="col-md-8">
         <ul class="list-inline custom-breadcrumb">
-          <li class="list-inline-item"><a class="h2 text-primary font-secondary" href="@@page-link">Create Exams Here</a></li>
+          <li class="list-inline-item"><a class="h2 text-primary font-secondary" href="@@page-link">View Rank</a></li>
           <li class="list-inline-item text-white h3 font-secondary @@nasted"></li>
         </ul>
-        <p class="text-lighten">We make it easy for you to create exams using Google forms and conduct the exams</p>
+        <p class="text-lighten"></p>
       </div>
     </div>
   </div>
 </section>
 <!-- /page title -->
-<br><br>
-<section class="section pt-0">
-    <div class="container">
-      <div class="row">
-        <div class="col-12"><br>
-          <!-- <h2 class="section-title"><center>Here's What All You Can Do!</center></h2> -->
-        </div>
+
+<!-- about 
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <h2 class="section-title">Enter Exam ID</h2>
       </div>
-      <div class="row justify-content-center">
-    <!-- blog post -->
-    <article class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
-      <div class="card rounded-0 border-bottom border-primary border-top-0 border-left-0 border-right-0 hover-shadow">
-        <img class="card-img-top rounded-0" src="/static/images/blog/post-1.jpg" alt="Post thumb">
-        <div class="card-body">
-          <!-- post meta -->
-          <ul class="list-inline mb-3">
-          </ul>
-          <a href="/admin/home/examinationtype/add/">
-            <h4 class="card-title">Add an Exam</h4>
-          </a>
-          <p class="card-text">By clicking below, you will be able to add an Exam</p>
-          <a href="/admin/home/examinationtype/add/" class="btn btn-primary btn-sm">Click here</a>
-        </div>
-      </div>
-    </article>
-    <!-- blog post -->
-    <article class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
-      <div class="card rounded-0 border-bottom border-primary border-top-0 border-left-0 border-right-0 hover-shadow">
-        <img class="card-img-top rounded-0" src="/static/images/blog/post-2.jpg" alt="Post thumb">
-        <div class="card-body">
-          <!-- post meta -->
-          <ul class="list-inline mb-3">
-            
-          </ul>
-          <a href="https://docs.google.com/forms/d/1DT6SdCBpCb9pgEmGSTnAU0qmsNoAE2FGG_K25CO8_h4/edit">
-            <h4 class="card-title">Create Question Paper</h4>
-          </a>
-          <p class="card-text">By clicking below, you will be able to create Question paper for an exam</p>
-          <a href="https://docs.google.com/forms/d/1DT6SdCBpCb9pgEmGSTnAU0qmsNoAE2FGG_K25CO8_h4/edit" class="btn btn-primary btn-sm">Click Here</a>
-        </div>
-      </div>
-    </article>
-  
-    
-  </div>
     </div>
-  </section>
+    <div class="row">
+      <div class="col-lg-7 mb-4 mb-lg-0">
+        <form action="#" method="POST">
+          {% csrf_token %}
+          <input type="text" class="form-control mb-3" id="name" name="eid" placeholder="Exam ID">
+          <button type="submit" value="send" class="btn btn-primary">SEND MESSAGE</button>
+        </form>
       </div>
     </div>
   </div>
 </section>
-<!-- /about -->
+ /about -->
+
+<div class = "conatainer">
+  <div class = "row">
+    <div class="col-md-6 col-sm-6 mb-4 mb-md-0">
+    {% for i in "id" %}
+        {{ i.id}}
+        {{ i.studentid_id}}
+        {{ i.marks }}
+    {% endfor %}
+    </div>
+  </div>
+</div>
 
 <!-- funfacts -->
 <section class="section-sm bg-primary">

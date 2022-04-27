@@ -19,3 +19,5 @@ admin.site.register(exammarklist2)
 admin.site.register(exammarklist3)
 admin.site.register(examinationtype)
 admin.site.register(attempts)
+
+admin.site.register(examquestionpaper)

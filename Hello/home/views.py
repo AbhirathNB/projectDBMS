@@ -85,7 +85,20 @@ def previousResults(request):
     return render(request, 'previousResults.html')
 
 def viewRank(request):
+    if request.method == 'POST':
+        examid = request.POST.get("eid")
+
+        user = exammarklist1.objects.raw(f"SELECT id, marks, studentid_id from home_exammarklist1 where examid = '{examid}' order by marks")
+        print("hi")
+        return redirect('/viewRank1', {"id" : user})
+            
+     
+
+
     return render(request, 'viewRank.html')
+
+def viewRank1(request, dict={}):
+    return render(request, 'viewRank1.html', dict)
 
 def attemptExam(request):
     return render(request, 'attemptExam.html')

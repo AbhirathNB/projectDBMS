@@ -116,6 +116,14 @@ class attempts(models.Model):
 
     class Meta:    
         unique_together = (('studentid', 'examid'),)
+        
+class examquestionpaper(models.Model):
+    examid = models.ForeignKey(exammarklist2, on_delete=models.CASCADE)
+    examtype = models.CharField(max_length=50)
+    questionpaper = models.CharField(max_length=1000, primary_key = True)
+
+
+
 
 
     

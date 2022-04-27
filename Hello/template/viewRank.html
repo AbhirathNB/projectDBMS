@@ -93,18 +93,24 @@
 <section class="section">
   <div class="container">
     <div class="row">
-      <div class="col-12">
-        
-
-        <!--<img class="img-fluid w-100 mb-4" src="/static/computer-test.jpg" alt="about image">
-        <h2 class="section-title">ABOUT OUR PLATFORM</h2>
-         <p>We've created affordable Online Testing Plans to suit every organization. From occasional Testing to Enterprise Quiz Maker requirements, Examomatic is your Secure & reliable exam maker & online testing solution. You can also Test 1,000s of Users simultaneously with Examomatic.</p>
-        <p>Our custom web-based Testing tool allows you to easily create secure online Exams & assessments with advanced Quiz settings such as time limits, public & private Test access, randomize Questions, instant feedback, multiple choice, matching, short answer, video, audio, essay & more Question types, embed exams in Wordpress & Google Sites.</p> -->
+      <div class="col-lg-12">
+        <h2 class="section-title">Enter Exam ID</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-7 mb-4 mb-lg-0">
+        <form action="#" method="POST">
+          {% csrf_token %}
+          <input type="text" class="form-control mb-3" id="name" name="eid" placeholder="Exam ID">
+          <button type="submit" value="send" class="btn btn-primary">SEND MESSAGE</button>
+        </form>
       </div>
     </div>
   </div>
 </section>
 <!-- /about -->
+
+
 
 <!-- funfacts -->
 <section class="section-sm bg-primary">

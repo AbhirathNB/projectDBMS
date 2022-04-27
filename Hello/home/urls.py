@@ -18,6 +18,7 @@ urlpatterns = [
     path("adminFaqs", views.adminFaqs, name = 'adminFaqs'),
     path("previousResults", views.previousResults, name = 'previousResults'),
     path("viewRank", views.viewRank, name = 'viewRank'),
+    path("viewRank1", views.viewRank1, name = 'viewRank1'),
     path("attemptExam", views.attemptExam, name = 'attemptExam'),
     path("manageStudents", views.manageStudents, name = 'manageStudents'),
     path("createExam", views.createExam, name = 'createExam'),
