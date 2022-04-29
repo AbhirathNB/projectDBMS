@@ -101,8 +101,8 @@
       <div class="col-lg-7 mb-4 mb-lg-0">
         <form action="#" method="POST">
           {% csrf_token %}
-          <input type="text" class="form-control mb-3" id="name" name="eid" placeholder="Exam ID">
-          <button type="submit" value="send" class="btn btn-primary">SEND MESSAGE</button>
+          <input type="text" class="form-control mb-3" id="name" name="eid" placeholder="Exam ID" required>
+          <button type="submit" value="send" class="btn btn-primary">VIEW RANK</button>
         </form>
       </div>
     </div>
@@ -142,7 +142,7 @@
       </tbody>
     </table>
   </div> 
-  </div>
+</div>
 
 
 <!-- /about -->

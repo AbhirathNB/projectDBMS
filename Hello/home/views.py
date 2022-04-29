@@ -102,13 +102,6 @@ def viewRank(request):
 
     return render(request, 'viewRank.html', {'id' : user})
 
-def viewRank1(request):
-    # print(dict)
-    # if dict:
-    #     print("bladder")
-        # print(dict)
-    return render(request, 'viewRank1.html')
-
 def attemptExam(request):
     return render(request, 'attemptExam.html')
 
