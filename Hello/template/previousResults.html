@@ -95,14 +95,55 @@
     <div class="row">
       <div class="col-12">
         <img class="img-fluid w-100 mb-4" src="/static/computer-test.jpg" alt="about image">
-        <br><br><h2 class="section-title">View Previous Results</h2>
+        <br><br><h2 class="section-title">View Previous Results</h2><br><br>
         <!--<p>We've created affordable Online Testing Plans to suit every organization. From occasional Testing to Enterprise Quiz Maker requirements, Examomatic is your Secure & reliable exam maker & online testing solution. You can also Test 1,000s of Users simultaneously with Examomatic.</p>
         <p>Our custom web-based Testing tool allows you to easily create secure online Exams & assessments with advanced Quiz settings such as time limits, public & private Test access, randomize Questions, instant feedback, multiple choice, matching, short answer, video, audio, essay & more Question types, embed exams in Wordpress & Google Sites.</p>-->
+      </div>
+      <div class="col-lg-7 mb-4 mb-lg-0">
+        <form action="#" method="POST">
+          {% csrf_token %}
+          <input type="text" class="form-control mb-3" id="name" name="eid" placeholder="Exam ID">
+          <button type="submit" value="send" class="btn btn-primary">SEND MESSAGE</button>
+        </form>
       </div>
     </div>
   </div>
 </section>
+
+<div class = "container">
+  <div class="col-md-12 col-sm-12 mb-12 mb-md-0" >
+    <table class="table table-bordered">
+      
+      <thead>
+        <tr>
+          <th scope="col" >Student ID</th>
+          <th scope="col" >Exam Code</th>
+          <th scope="col">Marks</th>
+          
+        </tr>
+      </thead>
+      <tbody>
+
+        <script>
+          var k = 1;
+          k = k+1;
+        </script>
+        {% for i in id %}
+          <tr></tr>
+            <td scope="row">{{ i.studentid_id }}</td>
+            <td scope="row">{{ i.examid }}</td>
+            <td scope="row">{{ i.marks }}</td>
+            
+          </tr> 
+        {% endfor %}
+        
+        
+      </tbody>
+    </table>
+  </div> 
+  </div>
 <!-- /about -->
+
 
 
 <footer>

@@ -82,17 +82,21 @@ def adminContact(request):
     return render(request, 'adminContact.html')
 
 def previousResults(request):
-    return render(request, 'previousResults.html')
+
+    user = None
+    if request.method == 'POST':
+        examid = request.POST.get("eid")
+
+        user = exammarklist1.objects.raw(f"SELECT * from home_exammarklist1 where examid = '{examid}' order by studentid_id")  
+
+    return render(request, 'previousResults.html', {'id' : user})
 
 def viewRank(request):
     user = None
     if request.method == 'POST':
         examid = request.POST.get("eid")
 
-        user = exammarklist1.objects.raw(f"SELECT * from home_exammarklist1 where examid = '{examid}' order by marks desc")
-        #return redirect('/viewRank', {'id': user})
-    # else:
-    #     user = exammarklist1.objects.raw(f"SELECT * from home_exammarklist1 order by marks desc")      
+        user = exammarklist1.objects.raw(f"SELECT * from home_exammarklist1 where examid = '{examid}' order by marks desc")     
      
 
 
