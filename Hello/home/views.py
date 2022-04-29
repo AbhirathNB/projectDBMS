@@ -103,6 +103,7 @@ def viewRank(request):
     return render(request, 'viewRank.html', {'id' : user})
 
 def attemptExam(request):
+
     return render(request, 'attemptExam.html')
 
 def manageStudents(request):
