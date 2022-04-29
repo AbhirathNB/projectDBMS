@@ -100,26 +100,14 @@
       </tr>
     </thead>
     <tbody>
+      {%  for i in questionpaper %}
       <tr>
-        <th scope="row">DBMS-2022</th>
-          <td><a href="https://forms.gle/kBb5ATDf2vr3VJMq6" class="btn btn-primary btn-sm">Attempt now</a></td>
+        <th scope="row">{{ i.examid_id }}</th>
+          <td><a href="{{i.questionpaper}}" class="btn btn-primary btn-sm">Attempt now</a></td>
         
       </tr>
-      <tr>
-        <th scope="row">DSA-2022</th>
-        
-        <td><a href="https://forms.gle/8LTnB99JQUdGHXci8" class="btn btn-primary btn-sm">Attempt now</a></td>
-      </tr>
-      <tr>
-        <th scope="row">MPI-2022</th>
-        
-        <td><a href="https://forms.gle/4sLWijwrPY3tdZgg7" class="btn btn-primary btn-sm">Attempt now</a></td>
-      </tr>
-      <tr>
-        <th scope="row">OOP-2022</th>
-        
-        <td><a href="https://forms.gle/PEDm2hgAbPNq5RLV9" class="btn btn-primary btn-sm">Attempt now</a></td>
-      </tr>
+      {% endfor %}
+      
     </tbody>
   </table>
 
@@ -180,26 +168,6 @@
   </div>
 </section>
 <!-- /funfacts -->
-
-<!-- success story -->
-<!-- <section class="section bg-cover" data-background="/static/images/backgrounds/success-story.jpg">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-6 col-sm-4 position-relative success-video">
-        <a class="play-btn venobox" href="https://youtu.be/dQw4w9WgXcQ" data-vbtype="video">
-          <i class="ti-control-play"></i>
-        </a>
-      </div>
-      <div class="col-lg-6 col-sm-8">
-        <div class="bg-white p-5">
-          <h2 class="section-title">Success Stories</h2>
-          <p>Many top comapanies have bee using the Examomatic to manage campus recruitment test to filter/identify right candidates suitable for the interview round.</p>
-          <p>Many schools of banking have been using Examomatic to accept Online Registration for their Banking Exam related courses.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section> -->
 
 <footer>
  

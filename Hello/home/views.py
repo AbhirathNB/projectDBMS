@@ -104,7 +104,9 @@ def viewRank(request):
 
 def attemptExam(request):
 
-    return render(request, 'attemptExam.html')
+    user = examquestionpaper.objects.all()
+
+    return render(request, 'attemptExam.html', {'questionpaper' : user})
 
 def manageStudents(request):
     return render(request, 'manageStudents.html')
