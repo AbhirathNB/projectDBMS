@@ -108,6 +108,43 @@
     </div>
   </div>
 </section>
+
+
+<div class = "container">
+  <div class="col-md-12 col-sm-12 mb-12 mb-md-0" >
+    <table class="table table-bordered">
+      
+      <thead>
+        <tr>
+          <th scope="col" >Rank</th>
+          <th scope="col" >Exam Code</th>
+          <th scope="col" >Student ID</th>
+          <th scope="col">Marks</th>
+          
+        </tr>
+      </thead>
+      <tbody>
+
+        <script>
+          var k = 1;
+          k = k+1;
+        </script>
+        {% for i in id %}
+          <tr>
+            <td scope="row">{{ forloop.counter }}</td>
+            <td scope="row">{{ i.examid }}</td>
+            <td scope="row">{{ i.marks }}</td>
+            <td scope="row">{{ i.studentid_id }}</td>
+          </tr> 
+        {% endfor %}
+        
+        
+      </tbody>
+    </table>
+  </div> 
+  </div>
+
+
 <!-- /about -->
 
 
